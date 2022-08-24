@@ -42,11 +42,14 @@ function displayActors(actors) {
     document.querySelector(".content span").textContent = actors.movie;
 
     document.querySelector(".detailCard").classList.remove("hidden");
+
+    document.querySelector(".content").classList.add(actors.movie.replace(" ", "")).content;
   });
 
   document.querySelector(".closeBtn").addEventListener("click", () => {
     document.querySelector(".detailCard").classList.add("hidden");
     console.log("clicked");
+    document.querySelector(".content").classList.remove(actors.movie.replace(" ", "")).content;
   });
 
   // Append Parent
