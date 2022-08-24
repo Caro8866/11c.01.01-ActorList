@@ -28,7 +28,6 @@ header {
   text-align: center;
   background-color: var(--colourBG);
   color: var(--colourText);
-  padding: 1rem 0;
 }
 h1 {
   font-family: var(--font-primary);
@@ -96,4 +95,38 @@ p {
 }
 .FightClub > p > .movieName {
   color: #eb66a3;
+}
+
+.detailCard {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: auto;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.InceptionBG {
+  background-color: hsl(197, 89%, 22%, 1);
+}
+
+.InceptionBG > p > .movieName {
+  color: #e13146;
+}
+
+.closeBtn {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
