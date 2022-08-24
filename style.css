@@ -67,30 +67,33 @@ p {
 
 /* MOVIES */
 
-.pulpFiction {
+.PulpFiction {
   background-color: hsl(355, 83%, 35%, 0.7);
 }
-.pulpFiction > p > .movieName {
+.PulpFiction > p > .movieName {
   color: #f9d501;
 }
 
-.inception {
+.Inception {
   background-color: hsl(197, 89%, 22%, 0.7);
 }
 
-.inception > p > .movieName {
+.Inception > p > .movieName {
   color: #e13146;
 }
-.goodFellas {
+.Goodfellas {
   background-color: hsl(0, 0%, 100%, 0.7);
 }
-.goodFellas > p > .movieName {
+.Goodfellas > p {
+  color: #8c8e8e;
+}
+.Goodfellas > p > .movieName {
   color: #0e0d07;
 }
 
-.fightClub {
+.FightClub {
   background-color: hsl(98, 52%, 32%, 0.7);
 }
-.fightClub > p > .movieName {
+.FightClub > p > .movieName {
   color: #eb66a3;
 }

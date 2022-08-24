@@ -5,22 +5,34 @@ const database = "actors.json";
 // Fetch Data
 fetch(database)
   .then((res) => res.json())
-  .then((data) => handleActors(data));
+  .then((data) => loadActors(data));
 
-function handleActors(actors) {
-  console.log(actors);
+function loadActors(data) {
+  console.log(data);
+  data.forEach(displayActors);
 }
 
-// Populate page
+// POPULATE PAGE
+function displayActors(actors) {
+  const parent = document.querySelector(".actors");
 
-// Grab template
+  // Grab template
+  const template = document.querySelector("#actorCardTemp").content;
 
-// Clone template
+  // Clone template
+  const copy = template.cloneNode(true);
 
-// Change Content
+  // Change Content
 
-// Grab Parent
+  // Actor name
+  copy.querySelector("h2").textContent = actors.fullname;
 
-// Append Parent
+  // Movie name
+  copy.querySelector(".movieName").textContent = actors.movie;
 
-// Show info card
+  // Add class of movie to change colors + remove spaces in movie name to match classes
+  copy.querySelector("article").classList.add(actors.movie.replace(" ", ""));
+
+  // Append Parent
+  parent.appendChild(copy);
+}
