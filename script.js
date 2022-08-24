@@ -33,6 +33,22 @@ function displayActors(actors) {
   // Add class of movie to change colors + remove spaces in movie name to match classes
   copy.querySelector("article").classList.add(actors.movie.replace(" ", ""));
 
+  // DETAIL CARD
+  copy.querySelector(".actorCard").addEventListener("click", () => {
+    console.log("clicked");
+    document.querySelector(".detailCard").classList.remove("hidden");
+
+    document.querySelector(".content h2").textContent = actors.fullname;
+    document.querySelector(".content span").textContent = actors.movie;
+
+    document.querySelector(".detailCard").classList.remove("hidden");
+  });
+
+  document.querySelector(".closeBtn").addEventListener("click", () => {
+    document.querySelector(".detailCard").classList.add("hidden");
+    console.log("clicked");
+  });
+
   // Append Parent
   parent.appendChild(copy);
 }
