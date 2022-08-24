@@ -1,0 +1,96 @@
+:root {
+  /* Colour palatte taken from iception poster :) */
+  --colourBG: #dde7e6;
+  --colourText: #1d2830;
+  --colourMain: #064d68;
+  --colourSecondary: #7aa6b7;
+  --colourAccent: #e13146;
+  --fontfamily: fight_this;
+}
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  background-color: var(--colourBG);
+  color: var(--colourBG);
+  font-family: Avenir;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+  background-color: var(--colourBG);
+  color: var(--colourText);
+  padding: 1rem 0;
+}
+h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+}
+h2 {
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  color: var(--colourText);
+  line-height: 1.5rem;
+}
+
+.movieName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+p {
+  margin-left: 2rem;
+}
+
+.actors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  width: 70vw;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+.actorCard {
+  width: auto;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* MOVIES */
+
+.pulpFiction {
+  background-color: hsl(355, 83%, 35%, 0.7);
+}
+.pulpFiction > p > .movieName {
+  color: #f9d501;
+}
+
+.inception {
+  background-color: hsl(197, 89%, 22%, 0.7);
+}
+
+.inception > p > .movieName {
+  color: #e13146;
+}
+.goodFellas {
+  background-color: hsl(0, 0%, 100%, 0.7);
+}
+.goodFellas > p > .movieName {
+  color: #0e0d07;
+}
+
+.fightClub {
+  background-color: hsl(98, 52%, 32%, 0.7);
+}
+.fightClub > p > .movieName {
+  color: #eb66a3;
+}
