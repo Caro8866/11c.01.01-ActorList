@@ -41,8 +41,6 @@ function displayActors(actors) {
     document.querySelector(".content h2").textContent = actors.fullname;
     document.querySelector(".content span").textContent = actors.movie;
 
-    document.querySelector(".detailCard").classList.remove("hidden");
-
     document.querySelector(".content").classList.add(actors.movie.replace(" ", "")).content;
   });
 
