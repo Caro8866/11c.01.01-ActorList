@@ -6,7 +6,6 @@ const database = "actors.json";
 fetch(database)
   .then((res) => res.json())
   .then((data) => loadActors(data));
-´
 function loadActors(data) {
   console.log(data);
   data.forEach(displayActors);
