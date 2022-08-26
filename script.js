@@ -6,6 +6,7 @@ const database = "actors.json";
 fetch(database)
   .then((res) => res.json())
   .then((data) => loadActors(data));
+
 function loadActors(data) {
   console.log(data);
   data.forEach(displayActors);
@@ -21,7 +22,7 @@ function displayActors(actors) {
   // Clone template
   const copy = template.cloneNode(true);
 
-  // Change Content
+  // CHANGE CONTENT
 
   // Actor name
   copy.querySelector("h2").textContent = actors.fullname;
